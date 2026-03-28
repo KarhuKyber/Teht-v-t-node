@@ -25,7 +25,7 @@ td {
   padding: 0.5em 1em;
 }
 .highlight {
-  background-color: #fff9c4; /* Keltainen tausta */
+  background-color: #fff9c4; 
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
