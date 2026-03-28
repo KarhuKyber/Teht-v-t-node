@@ -1,0 +1,137 @@
+/* Perusasetukset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigaatio */
+.navbar {
+  background: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #004d71;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #004d71;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://lma.fi/uploads/Projects/Metropolia/metropolia1-web.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* ravintolat */
+.content {
+  padding: 40px 0;
+}
+
+.city-title {
+  color: #b7c1c6a5;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.restaurant-list {
+  margin-bottom: 40px;
+}
+
+.res-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.res-item:hover {
+  transform: translateX(5px);
+  border-left: 5px solid #004d71;
+}
+
+.res-info h3 {
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.res-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.res-distance {
+  font-weight: bold;
+  color: #004d71;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #333;
+  color: #fff;
+}
