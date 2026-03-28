@@ -773,11 +773,7 @@ const restaurants = [
 // your code here
 const table = document.querySelector('table');
 const modal = document.querySelector('dialog');
-
-// a. Järjestetään ravintolat aakkosjärjestykseen nimen mukaan
 restaurants.sort((a, b) => a.name.localeCompare(b.name));
-
-// b & c. Luodaan elementit ja lisätään interaktiivisuus
 restaurants.forEach(restaurant => {
   const tr = document.createElement('tr');
 
@@ -789,17 +785,11 @@ restaurants.forEach(restaurant => {
 
   tr.append(nameTd, addressTd);
   table.append(tr);
-
-  // Klikkaustapahtuma
   tr.addEventListener('click', () => {
-    // 1. Exclusive highlighting: poistetaan luokka kaikilta muilta riveiltä
     const allRows = document.querySelectorAll('tr');
     allRows.forEach(row => row.classList.remove('highlight'));
-
-    // 2. Lisätään highlight-luokka klikatulle riville classList-ominaisuudella
     tr.classList.add('highlight');
-
-    // 3. Täytetään modal yksityiskohtaisilla tiedoilla (tehtävän kohta c)
+    
     modal.innerHTML = `
       <h3>${restaurant.name}</h3>
       <p><strong>Osoite:</strong> ${restaurant.address}</p>
